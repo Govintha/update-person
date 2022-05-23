@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+	background-image:
+		url("https://images.unsplash.com/photo-1487611459768-bd414656ea10?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070");
+	background-color: #cccccc;
+	height: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+div {
+	text-align: center;
+}
+
+tr {
+	text-align: center;
+}
+</style>
+
+<script type="text/javascript" src="js/person.js"></script>
+
+</head>
+<body>
+	<!-- Page -->
+	 <div class="hero-image">
+	<h1>
+		<font color="LightSalmon">Enter Student Details</font>
+	</h1>
+
+
+
+	<form action="person-student" method="post">
+		<table border="1" align="center"  >
+			<tr >
+				<th >Enter AdharCardNumber</th>
+				<td><input type="text" id="adharcard" name="adharcard" size="30" onblur="isValidAdharCard()">
+				 <p id="p1"></p>
+				   </td>
+			</tr>
+			<tr>
+				<th>Enter Name</th>
+				<td><input type="text" name="name" size="30"></td>
+			</tr>
+			<tr>
+				<th>Enter BirthDate</th>
+				<td><input type="date" name="birthdate" size="30"></td>
+			</tr>
+			<tr>
+				<th>Enter Address</th>
+				<td><input type="text" name="address" size="30"></td>
+			</tr>
+			<tr>
+				<th>Enter Email</th>
+				<td><input type="text" name="email" size="30"></td>
+			</tr>
+			<tr>
+				<th>Enter mobile</th>
+				<td><input type="number" name="mobile" size="30"></td>
+			</tr>
+			<tr>
+				<th>Enter AdmissionCode</th>
+				<td><input type="number" name="admissionCode" size="30">
+				</td>
+			</tr>
+
+			<tr>
+				<th>Enter ClassName</th>
+				<td><input type="text" name="classname" size="30"></td>
+			</tr>
+
+			<tr>
+				<th>Enter Subject1 Marks</th>
+				<td><input type="number" name="Subject1" size="30"></td>
+			</tr>
+
+			<tr>
+				<th>Enter Subject2 Marks</th>
+				<td><input type="number" name="Subject2" size="30"></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<th>Enter Subject3 Marks</th>
+				<td><input type="number" name="Subject3" size="30"></td>
+			</tr>
+			<tr>
+
+			</tr>
+			<tr>
+				<th>Enter Subject4 Marks</th>
+				<td><input type="number" name="Subject4" size="30"></td>
+			</tr>
+			<tr>
+
+			</tr>
+			<tr>
+				<th>Enter Subject5 Marks</th>
+				<td><input type="number" name="Subject5" size="30"></td>
+			</tr>
+			<tr>
+
+			</tr>
+			<tr>
+				<th>Enter Subject6 Marks</th>
+				<td><input type="number" name="Subject6" size="30"></td>
+			</tr>
+			<tr>
+
+
+				<td colspan="2" align="center"><input type="submit"
+					value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+</body>
+</html>
